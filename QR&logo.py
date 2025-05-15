@@ -97,7 +97,7 @@ def choose_bg_color():
 
 #  GUI Setup 
 root = tk.Tk()
-root.title("Advanced QR Code Generator")
+root.title("mikeCodeCraft")
 root.geometry("450x600")
 root.resizable(True, True)
 
