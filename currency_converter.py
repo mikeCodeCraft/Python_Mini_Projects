@@ -38,7 +38,7 @@ def convert_currency():
 
 # Build GUI
 root = tk.Tk()
-root.title("Currency Converter (CurrencyLayer)")
+root.title("Currency Converter mikeCodeCraft")
 root.geometry("400x300")
 root.resizable(False, False)
 

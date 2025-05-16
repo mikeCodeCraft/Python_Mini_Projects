@@ -99,7 +99,7 @@ def choose_bg_color():
 root = tk.Tk()
 root.title("Advanced QR Code Generator")
 root.geometry("450x600")
-root.resizable(False, False)
+root.resizable(True, True)
 
 logo_path = None
 generated_qr_img = None
@@ -119,7 +119,7 @@ text_entry.pack(pady=5)
 # tk.Label(root, text="WiFi: SSID,Password  |  Email/Phone: Enter address only", fg="gray", font=("Arial", 9)).pack()
 
 # Logo upload
-tk.Button(root, text="Upload Logo (Optional)", command=upload_logo, bg="gray", fg="white").pack(pady=5)
+tk.Button(root, text="Upload Logo (Optional)", command=upload_logo, bg="white", fg="black").pack(pady=5)
 logo_label = tk.Label(root, text="No logo selected", font=("Arial", 10), fg="blue")
 logo_label.pack(pady=2)
 
@@ -130,7 +130,7 @@ bg_color_var = tk.StringVar()
 color_frame = tk.Frame(root)
 color_frame.pack(pady=5)
 
-tk.Button(color_frame, text="Choose FG Color", command=choose_fg_color, bg="black", fg="white").pack(side=tk.LEFT, padx=5)
+tk.Button(color_frame, text="Choose FG Color", command=choose_fg_color, bg="white", fg="black").pack(side=tk.LEFT, padx=5)
 fg_color_label = tk.Label(color_frame, text="FG: black", font=("Arial", 10))
 fg_color_label.pack(side=tk.LEFT, padx=5)
 
@@ -139,7 +139,7 @@ bg_color_label = tk.Label(color_frame, text="BG: white", font=("Arial", 10))
 bg_color_label.pack(side=tk.LEFT, padx=5)
 
 # Generate + Save
-tk.Button(root, text="Generate QR Code", command=generate_qr, bg="green", fg="white", font=("Arial", 12)).pack(pady=10)
+tk.Button(root, text="Generate QR Code", command=generate_qr, bg="white", fg="black", font=("Arial", 12)).pack(pady=10)
 tk.Button(root, text="Save QR Code", command=save_qr, bg="blue", fg="white", font=("Arial", 12)).pack(pady=5)
 
 qr_label = tk.Label(root)
