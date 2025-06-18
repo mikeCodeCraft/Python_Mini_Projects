@@ -3,7 +3,7 @@ from tkinter import ttk
 import requests
 
 # Enter your CurrencyLayer API key here
-API_KEY = "Go to CurrencyLayer API to get it"
+API_KEY = "your_api_key_here"  # Replace with your actual API key
 
 # List of available currencies
 CURRENCIES = [

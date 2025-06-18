@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as tk 
 import random
 import time
 
@@ -100,8 +100,7 @@ class TypingGame:
         self.stats.config(text=f"Correct: {self.correct_count}/{self.current_index}\nTime: {round(total_time, 2)}s\nSpeed: {speed} WPM")
         
         
-# credit = tk.Label(root, text="Created by mikeCodeCraft", font=("Arial", 10))
-# credit.pack(pady=5)
+
 
 # Run the game
 if __name__ == "__main__":

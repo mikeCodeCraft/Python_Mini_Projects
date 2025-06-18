@@ -25,16 +25,16 @@ def webauto():
         wb.get('chrome').open(url)
     
 webauto()   
-# root = tk.Tk()
-# root.title("Auto browse")
-# root.geometry("200x200")
-# root.resizable(False, False)
+root = tk.Tk()
+root.title("Auto browse")
+root.geometry("200x200")
+root.resizable(False, False)
         
-# label = tk.Label(root, text = "Click here to open your\n favourite web pages", font=("Arial", 12))
-# label.pack(pady=30)
+label = tk.Label(root, text = "Click here to open your\n favourite web pages", font=("Arial", 12))
+label.pack(pady=30)
 
-# btn_file = tk.Button(root, text="Open", command=webauto)
-# btn_file.pack(pady=5)
+btn_file = tk.Button(root, text="Open", command=webauto)
+btn_file.pack(pady=5)
 
 
-# root.mainloop()
+root.mainloop()
